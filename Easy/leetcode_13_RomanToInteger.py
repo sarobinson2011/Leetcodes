@@ -48,4 +48,4 @@ class Solution:
 
 
 sol = Solution()
-sol.romanToInt('MCMII')  # I V
+sol.romanToInt('MCM')  # I V

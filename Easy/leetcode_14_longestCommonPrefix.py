@@ -19,4 +19,4 @@ class Solution:
 
 
 sol = Solution()
-sol.longestCommonPrefix(["gg", "ff", "hh"])
+sol.longestCommonPrefix(["flower", "flow", "flight"])

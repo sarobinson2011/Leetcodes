@@ -1,4 +1,6 @@
 class Solution:
+    """ Uses a Hash Map & a Stack """
+
     def isValid(self, s: str) -> bool:
         stack = []
         close_to_open = { ")": "(", "]": "[", "}": "{" }

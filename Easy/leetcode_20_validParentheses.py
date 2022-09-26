@@ -3,7 +3,7 @@ class Solution:
 
     def isValid(self, s: str) -> bool:
         stack = []
-        close_to_open = { ")": "(", "]": "[", "}": "{" }
+        close_to_open = {")": "(", "]": "[", "}": "{"}
 
         for i in s:
             if i in close_to_open:

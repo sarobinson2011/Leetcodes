@@ -1,29 +1,30 @@
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
 class Solution:
-    def mergeTwoLists(self, list1: [ListNode], list2: [ListNode]) -> [ListNode]:
-        """ merge lists """
-        merged_list = [ListNode]
+    def moveZeroes(self, nums: [int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        #  temporary storage array
+        temp = []
 
-        merged_list.val = list1.val
+        # store the non-zeros in temp[]
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                temp.append(nums[i])
 
-        while list2.next != None
-            if list1.next > list2.val:
-                merged_list.next = list2.val
-            else:
-                merged_list.next = list1.val
+        # calculate the number of zeros required
+        zeros = len(nums) - len(temp)
+
+        # append the zeros to temp[]
+        for i in range(zeros):
+            temp.append(0)
+
+        # copy the temp[] back to nums[]
+        nums = temp
+
+        print("nums =", nums)
 
 
-
-
-
-
-
-
-
-
-
+sol = Solution()
+# sol.moveZeroes([ 1, 5, 0, 0, 2 ])
+# sol.moveZeroes([0])
+sol.moveZeroes([ 0, 1, 0, 3, 12 ])

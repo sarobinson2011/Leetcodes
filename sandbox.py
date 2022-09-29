@@ -1,8 +1,6 @@
 class Solution:
     def moveZeroes(self, nums: [int]) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
+
         #  temporary storage array
         temp = []
 

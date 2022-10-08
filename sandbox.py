@@ -3,25 +3,27 @@
 
 class Solution:
 
-    def lengthOfLongestWord(self, s: str) -> int:
-        count = 0
-        store = []
-        # for c in s[::-1]:
-        for c in s[::-1]:
+    def plusOne(self, digits: [int]) -> [int]:
 
-            if c != "-":
-                count += 1
-            elif count > 0:
-                store.append(count)
-                count = 0
+        # temp = digits[::-1]
+        # print(temp[0])
 
-        store.append(count)
-        print(max(store))
-        return max(store)
+        if digits[::-1].count(9) == len(digits):
+            digits[::-1].append(0)
+            # print(temp)
+
+        for i in range(len(digits[::-1])):
+            if digits[::-1][i] == 9:
+                digits[::-1][i] = 0
+            else:
+                digits[::-1][i] = digits[::-1][i] + 1
+                break
+
+        print(temp[::-1])
 
 
 sol = Solution()
-sol.lengthOfLongestWord("a")               # return 1
-sol.lengthOfLongestWord("-a")              # return 1
-sol.lengthOfLongestWord("meme--11111123--")     # return 4
+sol.plusOne([4, 3, 2, 1])  # return [4,3,2,2]
+sol.plusOne([9])        # return [1,0]
+sol.plusOne([9, 9])      # return [1,0,0]
 

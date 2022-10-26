@@ -1,28 +1,13 @@
 class Solution:
-    def moveZeroes(self, nums: [int]) -> None:
-
-        #  temporary storage array
-        temp = []
-
-        # store the non-zeros in temp[]
-        for i in range(len(nums)):
-            if nums[i] != 0:
-                temp.append(nums[i])
-
-        # calculate the number of zeros required
-        zeros = len(nums) - len(temp)
-
-        # append the zeros to temp[]
-        for i in range(zeros):
-            temp.append(0)
-
-        # copy the temp[] back to nums[]
-        nums = temp
-
-        print("nums =", nums)
+    def fibonacci(self, limit: int):
+        out = [0, 1]
+        for i in range(limit):
+            temp = out[i] - out[i-1]
+            out.append(temp)
+            print('out =', out)
 
 
 sol = Solution()
-# sol.moveZeroes([ 1, 5, 0, 0, 2 ])
-# sol.moveZeroes([0])
-sol.moveZeroes([ 0, 1, 0, 3, 12 ])
+sol.fibonacci(5)
+
+""" recursively calculate Fibonacci numbers (to the limit) """

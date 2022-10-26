@@ -18,4 +18,4 @@ class Solution:
 
 
 sol = Solution()
-sol.mySqrt(3)
+sol.mySqrt(13)

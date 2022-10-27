@@ -1,4 +1,6 @@
-""" working solution to leetcode_70_climbingStairs """
+""" working solution to leetcode_70_climbingStairs  - SOLVED (beats: runtime - 70.7% / memory - 57.32%"""
+
+
 class Solution:
 
     def climbStairs(self, n: int) -> int:
@@ -21,4 +23,4 @@ sol.climbStairs(4)
 sol.climbStairs(5)
 sol.climbStairs(6)
 sol.climbStairs(7)
-#  1, 1, 2, 3, 5, 8, 13, 21
+# Fibonacci numbers:  1, 1, 2, 3, 5, 8, 13, 21

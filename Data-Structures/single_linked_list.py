@@ -6,8 +6,8 @@ class node:
         self.data = data
         self.next = None
 
-  ++
-class linked_list:
+
+class LinkedList:
     def __init__(self):
         self.head = node()
 
@@ -62,7 +62,7 @@ class linked_list:
             cur_index += 1
 
 
-my_list = linked_list()
+my_list = LinkedList()
 my_list.append(0)
 my_list.append(4)
 my_list.append(2)

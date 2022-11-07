@@ -30,7 +30,6 @@ class LinkedList:
         while itr:
             count += 1
             itr = itr.next
-
         return count
 
     def insert_at_begining(self, data):

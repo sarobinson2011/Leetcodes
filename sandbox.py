@@ -1,9 +1,2 @@
-""" draft solution to leetcode_83_deleteDuplicates  """
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
 class Solution:
-    def deleteDuplicates(self, head: [ListNode]) -> [ListNode]:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:

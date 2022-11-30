@@ -1,3 +1,6 @@
+""" Binary Tree - Breath First Search (BFS) """
+
+
 class Node:
     def __init__(self, data):
         self.left = None
@@ -25,3 +28,4 @@ class Node:
 root = Node(1)
 root.insert(2)
 root.insert(3)
+root.insert(4)
